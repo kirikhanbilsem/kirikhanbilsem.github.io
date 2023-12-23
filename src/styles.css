@@ -1,0 +1,187 @@
+body{
+	background-color:#fbfcfd;
+	background-image: url("./bg.jpg");
+	background-size:cover;
+	vertical-align:middle;
+	justify-content:center;
+	align-items:center;
+	text-align:center;			
+	place-items:center;
+	display:grid;
+}
+@keyframes blink { 50% { text-shadow:none;}  }			
+
+#ekran_bekleme{
+	background-color:#fbfcfd;
+	justify-content:center;
+	align-items:center;
+	text-align:center;			
+	vertical-align:middle;
+	z-index:100;
+	display:block;
+	position:fixed;
+	margin:auto;
+	padding:0px;
+	width:1000px;
+	height:700px;
+	border-radius:25px;
+	place-items:center;
+	display:grid;
+	border:0px;
+	font-size:50px;
+	font-weight:bold;
+	opacity:1;
+}
+	#ekran_bekleme img{
+		justify-content:center;
+		align-items:center;
+		text-align:center;			
+		vertical-align:middle;
+		display:inline-block;
+		margin:20px;
+		padding:5px;
+		width:350px;
+		height:350px;	
+	}
+#ekran_baslangic{
+	background-color:#00000099;
+	justify-content:center;
+	align-items:center;
+	text-align:center;			
+	vertical-align:middle;
+	z-index:20;
+	display:block;
+	position:fixed;
+	margin:auto;
+	padding:0px;
+	width:1000px;
+	height:700px;
+	border-radius: 25px;
+	border:0px;
+}
+	#ekran_baslangic img{
+		background-color:#0090B9;
+		justify-content:center;
+		align-items:center;
+		text-align:center;			
+		vertical-align:middle;
+		display:inline-block;
+		margin:20px;
+		padding:5px;
+		border: solid 4px transparent;
+		border-radius:10px;
+		box-shadow: 4px 4px 4px #94FFF1, inset 0px 2px 3px #94FFF1;
+		width:140px;
+		height:140px;	
+	}
+
+	#ekran_baslangic h1{
+		display:block;
+		align:center;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		vertical-align:middle;
+		width: 550px;
+		height: 70px;
+		color: rgba(255, 232, 50, 1);
+		font-size:50px;
+		margin:auto;
+		margin-top:50px;
+		margin-bottom:100px;
+		box-shadow:0 0 2px 4px rgba(200, 230, 255, 0.5),0 -2px 2px 3px rgba(200, 230, 255, 0.5) inset,0 0 2px 10px rgba(100, 150, 255, 0.9),0 0 2px 7px rgba(100, 150, 255, 1) inset,0 0 12px 13px rgba(0, 50, 255, 0.9),0 0 12px 11px rgba(0, 50, 255, 0.7) inset,0 8px 30px 18px rgba(0, 0, 0, 0.8), 0 8px 25px 12px rgba(0, 0, 0, 0.7) inset;
+		text-shadow:0 0 5px rgba(255, 245, 0, 1),0 0 28px rgba(255, 44, 0, 0.9),0 0 50px rgba(255, 120, 0, 0.5),0 0 24px rgba(255, 255, 255, 0.8);
+		border-radius:10px;
+		animation: blink 0.5s;
+		animation-iteration-count: infinite;
+	}
+
+	#ekran_baslangic button{
+		background-color:#000000;
+		color:#ffffff;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		vertical-align:middle;
+		display:inline-block;
+		margin:10px;
+		padding:10px;
+		width:auto;
+		height:90px;
+		border: solid 4px #ffffff;
+		border-radius:50px;
+		font-size:40px;
+	}
+		#ekran_baslangic button:hover{
+			text-shadow:0 0 5px rgba(255, 245, 0, 1),0 0 28px rgba(255, 44, 0, 0.9),0 8px 38px black,0 8px 10px black,0 2px 12px black,0 0 50px rgba(255, 120, 0, 0.5),0 0 24px rgba(255, 255, 255, 0.8);
+			box-shadow:0 0 2px 4px rgba(200, 230, 255, 0.5),0 -2px 2px 3px rgba(200, 230, 255, 0.5) inset,0 0 2px 10px rgba(100, 150, 255, 0.9),0 0 2px 7px rgba(100, 150, 255, 1) inset,0 0 12px 13px rgba(0, 50, 255, 0.9),0 0 12px 11px rgba(0, 50, 255, 0.7) inset,0 8px 30px 18px rgba(0, 0, 0, 0.8), 0 8px 25px 12px rgba(0, 0, 0, 0.7) inset;
+			color:rgba(255, 232, 50, 1);
+			border:solid 4px rgba(255, 232, 50, 1);			
+		}
+	
+		#ekran_baslangic button:active{
+			color:#00ff00;
+			border:solid 4px #00ff00;
+		}
+
+	.ackapa {
+		position: relative;
+		display: inline-block;
+		width: 60px;
+		height: 34px;
+		left:50px;
+	}
+
+	.kayannokta {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #ccc;
+		-webkit-transition: .4s;
+		transition: .4s;
+		border-radius: 34px; 
+	}
+	.kayannokta:before{
+		position:absolute;
+		color:#ffffff;
+		font-weight:bold;
+		left:-200px;
+		top:5px;
+		font-size:20px;
+		content:'Sürükle-Bırak Modu:';
+	}
+	.kayannokta:after {
+		position: absolute;
+		content: "";
+		height: 26px;
+		width: 26px;
+		left: 4px;
+		bottom: 4px;
+		background-color: white;
+		-webkit-transition: .4s;
+		transition: .4s;
+		border-radius: 50%;
+	}
+
+	input:checked + .kayannokta {
+		background-color: #2196F3;
+	}
+
+	input:focus + .kayannokta {
+		box-shadow: 0 0 1px #2196F3;
+	}
+
+	input:checked + .kayannokta:after {
+		-webkit-transform: translateX(26px);
+		-ms-transform: translateX(26px);
+		transform: translateX(26px);
+	}
+
+
+#ekran_oyun{
+	z-index:0;		
+	display:none;
+}
