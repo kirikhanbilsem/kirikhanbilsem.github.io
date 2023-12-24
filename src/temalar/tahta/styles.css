@@ -108,6 +108,8 @@ body{
 		justify-content:center;
 		align-items:center;
 		margin-left:3px;
+		outline: 1px dashed #fff;
+		outline-offset: -2px;
 	}
 		#ekran_oyun .grid-item[draggable] {
 			-webkit-user-select: none;
